@@ -1,8 +1,8 @@
 # OnlineFormaPro - ACS 2022 - Projet Maze-bank - FR Version
 
-Pour ce projet individuel, nous devons expérimenter le language de programmation Javascript. 
+Pour ce projet individuel, nous devons expérimenter le language de programmation Javascript ainsi que les notions d'algorithmie.
 
-Pour cela, notre challenge est de créer une application bancaire; héberger notre code source sur Github ainsi que sur le serveur Netlify. 
+Pour cela, notre challenge est de créer une application bancaire en utilisant Javascript au maximum; héberger notre code source sur Github ainsi que sur le serveur Netlify. 
 
 # Score GT Metrix
 
