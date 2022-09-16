@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maze Bank</title>
-  <link rel="stylesheet" href="">
-<script defer src="/assets/runtime.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>
-<body>
- <form>
-<label for="account-number"></label>
-<input type="text">
-<button></button>
- </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze-Bank</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  <script defer src="/assets/runtime.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>
 
+  <!-- // ajouter/retirer de l'argent
+// gestion du solde (voir le solde, balance doit être mise à jour automatiquement) et découvert autorisé
+// virement bancaire -->
+  <!-- //visuel
+// Des identifiants
 
-</body>
+// Formulaires, input, boutton envoyer
+
+//algo
+// récuperer boutton submit
+// récuperer la valeur input
+// créer une variable qui va stocker notre solde
+// créer une fonction quand on click sur le boutton envoyé récup les champs
+// innerhtml
+// boutton ajouter de l'argent, et retirer de l'argent
+// ex : argument input.value
+// a découvert
+// pouvoir envoyer de l'argent à un bénéficiaire -->
+
+  <body>
+    <div class="text-center">
+      <h1 class="rounded bg-purple-400 text-cyan-400 uppercase">
+        Bienvenue sur Maze-Bank
+      </h1>
+      <h3 class="text-black">Gérez votre compte bancaire en ligne</h3>
+    </div>
+    <div id="dashboard" class="container mt-5">
+      <div class="d-flex justify-content-between">
+        <div class="col-md-3 bg-primary rounded">
+          <h1>Dépôt</h1>
+          <p class="fs-3">€<span id="deposit">0</span></p>
+        </div>
+        <div class="col-md-3 bg-success rounded">
+          <h2>Retrait</h2>
+          <p class="fs-3">€<span id="withdraw">0</span></p>
+        </div>
+        <div class="col-md-3 bg-danger rounded">
+          <h2>Soldes</h2>
+          <p class="fs-3" id="balance">€<span>3500</span></p>
+        </div>
+      </div>
+      <div>
+        <div id="add-amount" class="d-flex justify-content-center">
+          <div class="col-md-5 container rounded shadow p-4">
+            <h3>Dépôt</h3>
+            <input
+              type="number"
+              class="form-control"
+              id="deposit-input"
+              placeholder="Montant à déposer"
+            />
+            <br />
+            <button class="btn btn-success" id="deposit-btn">Déposer</button>
+          </div>
+        </div>
+        <div class="col-md-5 container rounded shadow p-4">
+          <h3>Retrait</h3>
+          <input
+            type="number"
+            class="form-control"
+            id="withdraw-input"
+            placeholder="Montant à retirer"
+          />
+          <br />
+          <button class="btn btn-success" id="withdraw-btn">Retirer</button>
+        </div>
+        <div class="col-md-5 container rounded shadow p-4">
+          <h3>Envoyer de l'argent</h3>
+          <form action="" method="get">
+            <label for="name">Sélectionnez un bénéficiaire :</label>
+            <input
+              type="text"
+              class="form-control"
+              id="select-input"
+              placeholder="Nom du bénéficiaire"
+            />
+            <br />
+            <label for="">Ajouter montant à transférer :</label>
+            <input
+              type="number"
+              class="form-control"
+              id="transfer-input"
+              placeholder="Montant"
+            />
+            <button class="btn btn-success" id="transfer-btn">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
