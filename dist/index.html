@@ -78,13 +78,17 @@
         <div class="col-md-5 container rounded shadow p-4">
           <h3>Envoyer de l'argent</h3>
           <form action="" method="get">
-            <label for="name">Sélectionnez un bénéficiaire :</label>
-            <input
-              type="text"
-              class="form-control"
-              id="select-input"
-              placeholder="Nom du bénéficiaire"
-            />
+            <label for="name">Sélectionnez un bénéficiaire :
+            </label>
+              <input type="text">
+              <select  class="nami" name="nami">
+                <option value="">Nom du bénéficiaire...</option>
+                <option value="nami">Nami</option>
+                <option value="zoro">Zoro</option>
+                <option value="luffy">Luffy</option>
+                <option value="choppa">Choppa</option>
+              </select>
+            <div class="result"></div>
             <br />
             <label for="">Ajouter montant à transférer :</label>
             <input
